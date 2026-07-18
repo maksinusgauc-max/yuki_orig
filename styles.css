@@ -118,7 +118,9 @@ main { background: var(--page); }
 
 .equipment-grid {
   width: min(var(--grid-width), calc(100% - 34px));
-  margin: 18px auto 0;
+  margin: -22px auto 0;
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
@@ -206,7 +208,9 @@ main { background: var(--page); }
 
 .video-grid {
   width: min(var(--grid-width), calc(100% - 34px));
-  margin: 18px auto 0;
+  margin: -20px auto 0;
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
@@ -255,7 +259,7 @@ main { background: var(--page); }
 }
 .rules-link { margin-top: 18px; }
 .contact-card {
-  margin-top: 28px;
+  margin-top: 18px;
   padding: 22px 28px 20px;
   font-size: 13px;
   line-height: 1.42;
@@ -330,7 +334,7 @@ main { background: var(--page); }
 
   .equipment-grid {
     width: min(var(--grid-width), calc(100% - 34px));
-    margin-top: 18px;
+    margin-top: -14px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
   }
@@ -367,7 +371,7 @@ main { background: var(--page); }
 
   .video-grid {
     width: min(var(--grid-width), calc(100% - 34px));
-    margin-top: 18px;
+    margin-top: -14px;
     grid-template-columns: 1fr;
     gap: 18px;
   }
@@ -389,7 +393,7 @@ main { background: var(--page); }
   }
   .rules-link { margin-top: 17px; }
   .contact-card {
-    margin-top: 30px;
+    margin-top: 18px;
     padding: 20px 17px 19px;
     font-size: 11px;
   }
