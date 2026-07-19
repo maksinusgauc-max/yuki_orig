@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <title>YUKIGASSEN</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="assets/hero.webp">
+  <link rel="stylesheet" href="styles.css?v=20260719-1">
 </head>
 <body>
   <header class="hero" id="top">
-    <img class="hero__image" src="assets/hero.jpg" alt="Игра Юкигассен на снежной площадке">
+    <img class="hero__image" src="assets/hero.webp" alt="Игра Юкигассен на снежной площадке" fetchpriority="high" decoding="async">
     <div class="hero__overlay" aria-hidden="true"></div>
     <div class="hero__content">
       <p>Игра в снежки по правилам</p>
@@ -39,38 +40,38 @@
       </section>
 
       <section class="equipment-grid" id="inventory" aria-label="Инвентарь">
-        <a class="equipment-card" href="https://vk.ru/market-30584992?screen=group" target="_blank" rel="noopener noreferrer">
-          <img src="assets/helmets.png" alt="Шлемы">
+        <a class="equipment-card" href="https://vk.com/yukigassen" target="_blank" rel="noopener noreferrer">
+          <img src="assets/helmets.webp" alt="Шлемы" loading="lazy" decoding="async">
           <span>ШЛЕМЫ</span>
         </a>
-        <a class="equipment-card" href="https://vk.ru/market-30584992?screen=group" target="_blank" rel="noopener noreferrer">
-          <img src="assets/snowball-maker.png" alt="Снежколеп">
+        <a class="equipment-card" href="https://vk.com/yukigassen" target="_blank" rel="noopener noreferrer">
+          <img src="assets/snowball-maker.webp" alt="Снежколеп" loading="lazy" decoding="async">
           <span>СНЕЖКОЛЕП</span>
         </a>
-        <a class="equipment-card" href="https://vk.ru/market-30584992?screen=group" target="_blank" rel="noopener noreferrer">
-          <img src="assets/uniform.png" alt="Форма">
+        <a class="equipment-card" href="https://vk.com/yukigassen" target="_blank" rel="noopener noreferrer">
+          <img src="assets/uniform.webp" alt="Форма" loading="lazy" decoding="async">
           <span>ФОРМА</span>
         </a>
-        <a class="equipment-card" href="https://vk.ru/market-30584992?screen=group" target="_blank" rel="noopener noreferrer">
-          <img src="assets/misc.png" alt="Разное оборудование">
+        <a class="equipment-card" href="https://vk.com/yukigassen" target="_blank" rel="noopener noreferrer">
+          <img src="assets/misc.webp" alt="Разное оборудование" loading="lazy" decoding="async">
           <span>РАЗНОЕ</span>
         </a>
       </section>
 
       <div class="link-pair equipment-link">
         <strong>Заказать оборудование можно здесь:</strong>
-        <a href="https://vk.ru/market-30584992?screen=group" target="_blank" rel="noopener noreferrer">vk.ru/market-30584992</a>
+        <a href="https://vk.com/yukigassen" target="_blank" rel="noopener noreferrer">vk.com/yukigassen</a>
       </div>
 
       <section class="white-card rules-card" id="rules">
         <p><strong>Краткие правила:</strong><br>
           Юкигассен – это игра между двумя командами. Команда состоит из 4 нападающих, 3 защитников и капитана. Защитники обеспечивают снежками нападающих, которые атакуют противников. Капитан находится за линией поля и помогает игрокам своей команды, подсказывая время и обстановку игры. Также у команды есть возможность иметь двух запасных игроков.</p>
 
-        <img class="team-lineup" src="assets/team-lineup.png" alt="Состав синей и красной команд">
+        <img class="team-lineup" src="assets/team-lineup.png" alt="Состав синей и красной команд" loading="lazy" decoding="async">
 
         <p>Все активные игроки находятся на поле размером 36х10м, где расположены защитные баррикады. Две домашних баррикады, за которыми находятся корзины со снежками, четыре обычных и одна центральная, которая по размерам равна двум обычным.</p>
 
-        <img class="field-plan" src="assets/field-plan.png" alt="Схема площадки Юкигассен">
+        <img class="field-plan" src="assets/field-plan.png" alt="Схема площадки Юкигассен" loading="lazy" decoding="async">
 
         <p>Защитники могут передвигаться по всей территории поля, в то время как нападающим нельзя заходить за свою домашнюю линию. По этой причине только защитники могут доставать снежки из своей корзины.<br>
           На один тайм, который длится 3 минуты, нужно налепить 90 снежков. Выиграть надо 2 тайма.<br>
@@ -79,13 +80,13 @@
 
       <section class="video-grid" aria-label="Видео">
         <a class="video-card" href="https://dzen.ru/video/watch/696404c8c3e44520c29b4048" target="_blank" rel="noopener noreferrer">
-          <img src="assets/video-game.jpg" alt="Юкигассен — игра в снежки по правилам">
+          <img src="assets/video-game.webp" alt="Юкигассен — история игры в России" loading="lazy" decoding="async">
           <span class="video-card__overlay" aria-hidden="true"></span>
-          <strong>Юкигассен - игра в снежки по правилам</strong>
+          <strong>Юкигассен - история игры в России</strong>
           <span class="video-button">СМОТРЕТЬ ВИДЕО</span>
         </a>
         <a class="video-card" href="https://dzen.ru/video/watch/66c63a86af9fa531d76e04db" target="_blank" rel="noopener noreferrer">
-          <img src="assets/video-equipment.jpg" alt="Оборудование для Юкигассен">
+          <img src="assets/video-equipment.webp" alt="Оборудование для Юкигассен" loading="lazy" decoding="async">
           <span class="video-card__overlay" aria-hidden="true"></span>
           <strong>Оборудование для Юкигассен</strong>
           <span class="video-button">СМОТРЕТЬ ВИДЕО</span>

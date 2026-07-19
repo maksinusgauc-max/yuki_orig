@@ -110,7 +110,7 @@ main { background: var(--page); }
   border-radius: var(--radius);
 }
 .history {
-  padding: 24px 34px 26px;
+  padding: 24px 34px 50px;
   font-size: 13px;
   line-height: 1.42;
 }
@@ -137,20 +137,20 @@ main { background: var(--page); }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(.88) brightness(.90);
+  filter: saturate(.86) brightness(.80);
   transition: transform .3s ease, filter .3s ease;
 }
 .equipment-card::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 32, 74, .18), rgba(0, 35, 80, .50) 48%, rgba(0, 22, 55, .90));
+  background: linear-gradient(180deg, rgba(0, 30, 72, .28), rgba(0, 32, 76, .60) 48%, rgba(0, 18, 50, .94));
 }
 .equipment-card span {
   position: absolute;
   z-index: 1;
   left: 50%;
-  top: 57%;
+  top: 50%;
   transform: translate(-50%, -50%);
   min-width: 74px;
   padding: 4px 10px 3px;
@@ -192,7 +192,7 @@ main { background: var(--page); }
 
 .rules-card {
   margin-top: 18px;
-  padding: 22px 34px 26px;
+  padding: 22px 34px 52px;
   font-size: 13px;
   line-height: 1.42;
 }
@@ -227,13 +227,13 @@ main { background: var(--page); }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(.90) brightness(.88);
+  filter: saturate(.88) brightness(.79);
   transition: transform .3s ease;
 }
 .video-card__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,31,73,.38), rgba(0,27,63,.72) 65%, rgba(0,24,59,.92));
+  background: linear-gradient(180deg, rgba(0,29,70,.48), rgba(0,25,61,.79) 65%, rgba(0,20,54,.95));
 }
 .video-card strong {
   position: absolute;
@@ -329,7 +329,7 @@ main { background: var(--page); }
   .floating-nav a { min-height: 32px; padding: 0 6px; font-size: 10px; }
 
   .page-content { padding-top: 48px; padding-bottom: 31px; }
-  .history { padding: 20px 17px 22px; font-size: 11px; }
+  .history { padding: 20px 17px 38px; font-size: 11px; }
   .history p + p { margin-top: 17px; }
 
   .equipment-grid {
@@ -343,7 +343,7 @@ main { background: var(--page); }
     border-radius: 17px;
   }
   .equipment-card span {
-    top: 57%;
+    top: 50%;
     min-width: 76px;
     padding: 3px 9px 2px;
     font-size: 9px;
@@ -363,7 +363,7 @@ main { background: var(--page); }
 
   .rules-card {
     margin-top: 31px;
-    padding: 18px 17px 24px;
+    padding: 18px 17px 40px;
     font-size: 11px;
   }
   .team-lineup { margin: 24px auto 28px; }
